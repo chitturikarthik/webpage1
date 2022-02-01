@@ -1,0 +1,92 @@
+<html>
+<head>
+ <title>Vertical Text</title>
+ <style>
+     body {
+        color: white;
+          }
+    #grad {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, red, yellow);
+    }      
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'copperplate gothic', sans-serif;
+        font-weight: 100;
+    }
+    .outer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate( -50%, -50%);
+        width: 250px;
+        height: auto;
+    }      
+     
+    .outer img {
+        width: 100%;
+        height: auto;
+        border: 3px solid #ffd700;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px #ffd700;
+    }
+    .outer h1 {
+        position: absolute;
+        padding-bottom: 5px;
+        font-size: 29px;
+        text-transform: uppercase;
+        color: #ffd700;
+        font-weight: 300;
+        writing-mode: vertical-rl;
+        left: -38px;
+        transform: rotate( 180deg);
+        }        
+
+    .maindiv {
+        position: absolute;
+        width: 370px;
+        height: 670px;
+        border-radius: 8px;
+        background-color: black;
+        box-shadow: 8px 8px 20px rgb(7, 7, 7);
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+    }    
+    
+    .h3 {
+        font-family: 'arial', sans-serif;
+        position: relative;
+        font-weight: 400;
+        color: white;
+        padding-top: 15px;
+    }
+    .para {
+        font-family: 'bahnschrift', sans-serif;
+        position: relative;
+        font-weight: 70;
+        color: white;
+        text-align: justify;
+    }
+ </style>
+</head>
+<body>
+<div id="grad">    
+    <div class="maindiv">
+    <div class="outer">
+        <h1>robert downey jr.</h1>
+        <img src="rdj.jpg">
+        <h3 class="h3">American Actor</h3><br>
+        <p class="para"><b>Robert John Downey Jr.</b> is an American actor and 
+        producer. His career has been characteized by critical and popular 
+        success in his youth, followed by a period of several abuse and 
+        legal troubles, before the unbelievabe growth of commercial success later in 
+        his career. 
+        </p>
+    </div>
+    </div>
+</div>    
+</body>
+</html>
